@@ -8,8 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITextViewDelegate
+{
+    @IBOutlet weak var englishTextView: UITextView!
+    @IBOutlet weak var atbashTextView: UITextView!
+    
+    var aBrain = TranslationBrain()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
+    
+    
+    
+    
+    @IBAction func translateToAtbash(sender: UIButton)
+    {
+        //englishTextView.delegate = self
+        
+        let myString = aBrain.doTranslation(englishTextView.text)
+        
+    }
 
+    @IBAction func translateToEnglish(sender: UIButton)
+    {
+        
+    }
 }
 

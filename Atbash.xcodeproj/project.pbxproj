@@ -12,6 +12,7 @@
 		5BE4C9EA1D74CF68002B3EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4C9E81D74CF68002B3EB3 /* Main.storyboard */; };
 		5BE4C9EC1D74CF68002B3EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4C9EB1D74CF68002B3EB3 /* Assets.xcassets */; };
 		5BE4C9EF1D74CF68002B3EB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4C9ED1D74CF68002B3EB3 /* LaunchScreen.storyboard */; };
+		5BE4C9F71D74D3C3002B3EB3 /* TranslationBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4C9F61D74D3C3002B3EB3 /* TranslationBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5BE4C9EB1D74CF68002B3EB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE4C9EE1D74CF68002B3EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BE4C9F01D74CF68002B3EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE4C9F61D74D3C3002B3EB3 /* TranslationBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				5BE4C9E41D74CF68002B3EB3 /* AppDelegate.swift */,
 				5BE4C9E61D74CF68002B3EB3 /* ViewController.swift */,
+				5BE4C9F61D74D3C3002B3EB3 /* TranslationBrain.swift */,
 				5BE4C9E81D74CF68002B3EB3 /* Main.storyboard */,
 				5BE4C9EB1D74CF68002B3EB3 /* Assets.xcassets */,
 				5BE4C9ED1D74CF68002B3EB3 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				5BE4C9E71D74CF68002B3EB3 /* ViewController.swift in Sources */,
 				5BE4C9E51D74CF68002B3EB3 /* AppDelegate.swift in Sources */,
+				5BE4C9F71D74D3C3002B3EB3 /* TranslationBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
