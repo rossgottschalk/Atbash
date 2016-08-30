@@ -30,21 +30,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru8-s3-u95">
-                                <rect key="frame" x="88" y="520" width="135" height="30"/>
-                                <state key="normal" title="Translate to English"/>
+                                <rect key="frame" x="89" y="220" width="133" height="30"/>
+                                <state key="normal" title="Translate to Atbash"/>
                                 <connections>
-                                    <action selector="translateToEnglish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UY0-Ll-qlO"/>
+                                    <action selector="translateToAtbash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dfu-oa-Gqi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4z-tf-yhs">
-                                <rect key="frame" x="379" y="520" width="133" height="30"/>
-                                <state key="normal" title="Translate to Atbash"/>
+                                <rect key="frame" x="378" y="220" width="135" height="30"/>
+                                <state key="normal" title="Translate to English"/>
                                 <connections>
-                                    <action selector="translateToAtbash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="heT-QB-YcP"/>
+                                    <action selector="translateToEnglish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6mR-ru-hUA"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MbR-xF-f8K">
-                                <rect key="frame" x="20" y="111" width="270" height="389"/>
+                                <rect key="frame" x="20" y="111" width="270" height="89"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -53,7 +53,7 @@
                                 </connections>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Tr-8W-dy6">
-                                <rect key="frame" x="310" y="111" width="270" height="389"/>
+                                <rect key="frame" x="310" y="111" width="270" height="89"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -61,21 +61,32 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="dSq-oa-WbY"/>
                                 </connections>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYg-aX-TnZ">
+                                <rect key="frame" x="282" y="270" width="36" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.12560814419999999" blue="0.043175888410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zSi-o4-XKF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.88114228839441533" green="0.88114228839441533" blue="0.88114228839441533" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6Tr-8W-dy6" firstAttribute="leading" secondItem="MbR-xF-f8K" secondAttribute="trailing" constant="20" id="1OV-gi-a1V"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rYg-aX-TnZ" secondAttribute="bottom" constant="300" id="7Hu-mJ-gXb"/>
                             <constraint firstItem="i4z-tf-yhs" firstAttribute="centerX" secondItem="6Tr-8W-dy6" secondAttribute="centerX" id="H87-XD-zuP"/>
                             <constraint firstItem="MbR-xF-f8K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="HPD-1d-QpC"/>
                             <constraint firstItem="MbR-xF-f8K" firstAttribute="width" secondItem="6Tr-8W-dy6" secondAttribute="width" id="Kxf-5q-y1f"/>
                             <constraint firstItem="XXo-OA-thT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="L5L-xh-aWA"/>
                             <constraint firstItem="Ru8-s3-u95" firstAttribute="top" secondItem="MbR-xF-f8K" secondAttribute="bottom" constant="20" id="OD2-S7-yM2"/>
                             <constraint firstItem="6Tr-8W-dy6" firstAttribute="top" secondItem="6vd-U6-7MR" secondAttribute="bottom" constant="20" id="W9h-Px-HT9"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i4z-tf-yhs" secondAttribute="bottom" constant="50" id="Yor-Wi-Sfw"/>
+                            <constraint firstItem="rYg-aX-TnZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xdc-uX-sMZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i4z-tf-yhs" secondAttribute="bottom" constant="350" id="Yor-Wi-Sfw"/>
                             <constraint firstItem="i4z-tf-yhs" firstAttribute="top" secondItem="6Tr-8W-dy6" secondAttribute="bottom" constant="20" id="Zbc-jl-WUP"/>
                             <constraint firstItem="6vd-U6-7MR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="aqf-yk-L2H"/>
                             <constraint firstItem="6vd-U6-7MR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="bpo-BA-hgC"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ru8-s3-u95" secondAttribute="bottom" constant="50" id="g0t-XF-o2O"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ru8-s3-u95" secondAttribute="bottom" constant="350" id="g0t-XF-o2O"/>
                             <constraint firstItem="XXo-OA-thT" firstAttribute="centerX" secondItem="MbR-xF-f8K" secondAttribute="centerX" id="gEA-tE-Pq3"/>
                             <constraint firstItem="MbR-xF-f8K" firstAttribute="height" secondItem="6Tr-8W-dy6" secondAttribute="height" id="ggJ-ts-vFu"/>
                             <constraint firstItem="XXo-OA-thT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="hPH-28-Nh5"/>

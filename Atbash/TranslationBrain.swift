@@ -8,13 +8,11 @@
 
 import Foundation
 
+
+//Greg, Ty and I worked on the brain as a group
+
 class TranslationBrain: NSObject
 {
-    func doTranslation()
-    {
-    var result = [String]()
-    
-    
     let alphabetDict = ["a" : "z",
                         "b" : "y",
                         "c" : "x",
@@ -41,20 +39,53 @@ class TranslationBrain: NSObject
                         "x" : "c",
                         "y" : "b",
                         "z" : "a",
+                        "A" : "Z",
+                        "B" : "Y",
+                        "C" : "X",
+                        "D": "W",
+                        "E": "V",
+                        "F" : "U",
+                        "G" : "T",
+                        "H": "S",
+                        "I" : "R",
+                        "J" : "Q",
+                        "K" : "P",
+                        "L": "O",
+                        "M" : "N",
+                        "N" : "M",
+                        "O": "L",
+                        "P" : "K",
+                        "Q" : "J",
+                        "R" : "I",
+                        "S" : "H",
+                        "T" : "G",
+                        "U" : "F",
+                        "V" : "E",
+                        "W" : "D",
+                        "X" : "C",
+                        "Y" : "B",
+                        "Z" : "A",
                         " " : " ",
                         "/" : "/"]
     
-    let exampleWord = 
-    let arrayOfLetters = Array(exampleWord.characters)
     
-    for index in 0..<arrayOfLetters.count
+    
+
+    
+    func doTranslation(wordToTranslate: String) -> String
     {
-    let answer = alphabetDict["\(arrayOfLetters[index])"]
-    result.append(answer!)
-    }
-    //print(result)
+        var result = [String]()
+        var arrayOfLetters = Array(wordToTranslate.characters)
+        
+        for index in 0..<arrayOfLetters.count
+        {
+            let answer = alphabetDict["\(arrayOfLetters[index])"]
+            result.append(answer!)
+        }
     
-    let newResult = result.joinWithSeparator("")
-    print(newResult)
-    }
+        let newResult = result.joinWithSeparator("")
+        print(newResult)
+        
+        return newResult
+        }
 }
